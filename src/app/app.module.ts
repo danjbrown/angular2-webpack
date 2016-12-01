@@ -7,6 +7,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SettingsComponent } from './settings/settings.component';
+
+import { FilterPipe } from './pipes/filter.pipe';
+
+import { SharedService } from './services/shared.service';
 
 @NgModule({
   imports: [
@@ -19,10 +24,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    SidebarComponent
+    SidebarComponent,
+    SettingsComponent,
+    FilterPipe
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    SharedService
   ],
   bootstrap: [AppComponent]
 })

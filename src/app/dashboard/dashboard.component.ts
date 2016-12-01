@@ -16,7 +16,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.id = params['id'];
-      console.log(this.id);
     });
   }
 
