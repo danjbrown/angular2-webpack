@@ -1,14 +1,17 @@
 # angular2-webpack
-Angular2 Webpack starter, using a Bootstrap Dashboard template.
+An Angular2 Webpack starter, using a Bootstrap Dashboard template.
+
+The app is written in TypeScript and includes examples for routing, shared services and filters.
+
+Webpack includes webpack-dev-server that builds and reloads the app in the browser when a change is detected, making development easier.
 
 Install
 ```
 npm install
 ```
 
-Run the build and start the app
+Start the app using Webpack
 ```
-npm run build
 npm start
 ```
 
@@ -16,5 +19,3 @@ Run the tests
 ```
 npm test
 ```
-
-More to follow...
