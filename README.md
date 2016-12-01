@@ -1,7 +1,5 @@
 # angular2-webpack
-Angular2 Webpack starter based on the tutorial here:
-
-https://angular.io/docs/ts/latest/guide/webpack.html
+Angular2 Webpack starter, using a Bootstrap Dashboard template.
 
 Install
 ```
