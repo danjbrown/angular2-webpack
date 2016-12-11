@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { FilterPipe } from "./filter.pipe";
+import { FilterPipe } from './filter.pipe';
 
 describe('Filter Pipe Tests', () => {
     let pipe: FilterPipe;
@@ -19,7 +19,7 @@ describe('Filter Pipe Tests', () => {
     ];
 
     it('Should filter an object by a search term', () => {
-        var result = pipe.transform(input, 'sett');
+        let result = pipe.transform(input, 'sett');
 
         expect(result).toEqual(output);
     });

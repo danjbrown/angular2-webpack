@@ -5,7 +5,7 @@ import '../../../public/css/styles.css';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'] 
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
 
