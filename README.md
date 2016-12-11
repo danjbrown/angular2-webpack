@@ -31,3 +31,16 @@ Run the tests
 ```
 npm test
 ```
+
+Run in production (not sure if this is the best way!)
+```
+npm run build
+
+cp production_server.js dist
+
+cd dist
+
+node production_server.js
+```
+
+The production app should be served at http://localhost:3000
