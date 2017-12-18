@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import '../../../public/css/styles.css';
+import '../../../../public/css/styles.css';
 
 @Component({
   selector: 'dashboard',

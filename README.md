@@ -1,11 +1,12 @@
 # angular2-webpack
 
-An Angular2 starter application with integrated Bootstrap Dashboard template.
+An Angular2 starter application with integrated Bootstrap Dashboard template, together with a server side Node.js application running on a different port.
 
 You will see that the jQuery and Bootstrap resources are loaded in vendor.js
 
 Key Features:
 
+* Angular2 client and Node.js server side applications.
 * Written in TypeScript.
 * Now includes tslint, a static analysis linter for TypeSript.
 * Provides examples of Karma/Jasmine tests and skeleton test files for all components.
@@ -52,6 +53,8 @@ Start the app using Webpack
 npm start
 ```
 
+The development app should be served at http://localhost:8080
+
 Run the linter
 ```
 npm run lint
@@ -62,9 +65,15 @@ Run the tests
 npm test
 ```
 
-The development app should be served at http://localhost:8080
+## Running the server
 
-## Production build
+```
+npm run server or yarn run server
+```
+
+The server should be served at http://localhost:8081
+
+## Production build for the Angular2 client application
 
 ```
 npm run build

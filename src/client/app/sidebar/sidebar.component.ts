@@ -1,7 +1,7 @@
 import { Component, EventEmitter } from '@angular/core';
 import { SharedService } from '../services/shared.service';
+import '../../../../public/css/styles.css';
 
-import '../../../public/css/styles.css';
 @Component({
   selector: 'sidebar',
   templateUrl: './sidebar.component.html',

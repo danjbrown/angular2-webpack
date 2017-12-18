@@ -4,6 +4,7 @@
   "description": "A webpack starter for Angular",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
+    "server": "nodemon ./src/server/index.js",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "lint": "npm run tslint \"src/**/*.ts\"",
@@ -47,6 +48,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.8.0",
+    "nodemon": "^1.13.3",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.7",
     "raw-loader": "^0.5.1",
