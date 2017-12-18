@@ -22,6 +22,8 @@ Start the app using Webpack
 npm start
 ```
 
+The development app should be served at http://localhost:8080
+
 Run the linter
 ```
 npm run lint
