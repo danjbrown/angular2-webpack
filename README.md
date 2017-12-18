@@ -11,9 +11,9 @@ Key Features:
 * Provides examples of Karma/Jasmine tests and skeleton test files for all components.
 * Includes working examples of routing, shared services, event emitters and filters.
 * Uses webpack-dev-server which builds and reloads the app in the browser when a change is detected, making development faster.
-* Include support for yarn, which pins down exact installed versions. Migrated this after some conflicts with TypeScript and an associated loader package.
+* NEW support for yarn, which pins down exact installed versions and can be faster than npm because it creates a cached copy of packages.
 
-## Using yarn
+## Installing the app with yarn
 
 First install yarn
 ```
@@ -30,9 +30,19 @@ Start the app using Webpack
 yarn start
 ```
 
-## Using npm
+Run the linter
+```
+yarn run lint
+```
 
-Install using npm
+Run the tests
+```
+yarn test
+```
+
+## Installing the app with npm
+
+Install the app
 ```
 npm install
 ```
@@ -41,8 +51,6 @@ Start the app using Webpack
 ```
 npm start
 ```
-
-The development app should be served at http://localhost:8080
 
 Run the linter
 ```
@@ -54,7 +62,10 @@ Run the tests
 npm test
 ```
 
-Run in production (not sure if this is the best way!)
+The development app should be served at http://localhost:8080
+
+## Production build
+
 ```
 npm run build
 
