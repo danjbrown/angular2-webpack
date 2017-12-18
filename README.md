@@ -13,7 +13,7 @@ Key Features:
 * Uses webpack-dev-server which builds and reloads the app in the browser when a change is detected, making development faster.
 * Include support for yarn, which pins down exact installed versions. Migrated this after some conflicts with TypeScript and an associated loader package.
 
-# Using yarn
+## Using yarn
 
 First install yarn
 ```
@@ -30,7 +30,7 @@ Start the app using Webpack
 yarn start
 ```
 
-# Using npm
+## Using npm
 
 Install using npm
 ```
