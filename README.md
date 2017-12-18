@@ -69,7 +69,13 @@ npm test
 ## Running the server application
 
 ```
-npm run server or yarn run server
+npm run server
+```
+
+or
+
+```
+yarn run server
 ```
 
 The server should be served at http://localhost:8081
