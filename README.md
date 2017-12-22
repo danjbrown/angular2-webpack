@@ -32,6 +32,8 @@ Start the app using Webpack
 yarn start
 ```
 
+The development app should be served at http://localhost:8080
+
 Run the linter
 ```
 yarn run lint
@@ -86,8 +88,6 @@ The server should be served at http://localhost:8081
 npm run build
 
 cp production_server.js dist
-
-cd dist
 
 npm run prod
 ```
