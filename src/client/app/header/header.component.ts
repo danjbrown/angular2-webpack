@@ -20,22 +20,22 @@ export class HeaderComponent {
   public storedSearchTerm: any;
   searchTerm: Observable<string>;
 
-	constructor(private store: Store<AppState>, service: SharedService){
+  constructor(private store: Store<AppState>, service: SharedService){
     // read the search term from the ngrx/store
     this.store.select('searchTerm').subscribe(storedTerm => {
       this.storedSearchTerm = storedTerm;
     });
     this.sharedService = service;
-	}
+  }
 
-	setSearchTerm(event: any){
+  setSearchTerm(event: any){
     // write the search term to the ngrx/store
     this.store.dispatch({ type: SET, payload: event.target.value });
 
     this.sharedService.searchTermChange(event.target.value);
-	}
+  }
 
-	resetSearchTerm(){
-		this.store.dispatch({ type: RESET });
-	}
+  resetSearchTerm(){
+    this.store.dispatch({ type: RESET });
+  }
 }
