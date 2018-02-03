@@ -11,6 +11,7 @@ Key Features:
 * Now includes tslint, a static analysis linter for TypeSript.
 * Provides examples of Karma/Jasmine tests and skeleton test files for client side components.
 * Includes working examples of routing, shared services, event emitters and filters.
+* Working example of ngrx/store used to store the search term entered in the header.
 * The client side application uses webpack-dev-server which builds and reloads the app in the browser when a change is detected, making development faster.
 * The server side application uses nodemon which restarts the server when a change is detected, making development faster.
 * NEW support for yarn, which pins down exact installed versions and can be faster than npm because it creates a cached copy of packages.
