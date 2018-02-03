@@ -13,10 +13,14 @@ import { FilterPipe } from './pipes/filter.pipe';
 
 import { SharedService } from './services/shared.service';
 
+import { StoreModule } from '@ngrx/store';
+import { searchReducer } from './reducers/search';
+
 @NgModule({
   imports: [
     BrowserModule,
-    routing
+    routing,
+    StoreModule.provideStore({ searchTerm: searchReducer })
   ],
   declarations: [
     AppComponent,

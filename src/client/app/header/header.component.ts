@@ -1,6 +1,13 @@
 import { Component, EventEmitter } from '@angular/core';
 import { SharedService } from '../services/shared.service';
 import '../../../../public/css/styles.css';
+import { Store } from '@ngrx/store';
+import { SET, RESET  } from '../reducers/search';
+import {Observable} from 'rxjs/Rx';
+
+interface AppState {
+  searchTerm: string;
+}
 
 @Component({
   selector: 'header',
@@ -10,12 +17,25 @@ import '../../../../public/css/styles.css';
 export class HeaderComponent {
 
   public sharedService: any;
+  public storedSearchTerm: any;
+  searchTerm: Observable<string>;
 
-  constructor(service: SharedService) {
+	constructor(private store: Store<AppState>, service: SharedService){
+    // read the search term from the ngrx/store
+    this.store.select('searchTerm').subscribe(storedTerm => {
+      this.storedSearchTerm = storedTerm;
+    });
     this.sharedService = service;
-  }
+	}
 
-  public onChangeSearchTerm(event: any): void {
+	setSearchTerm(event: any){
+    // write the search term to the ngrx/store
+    this.store.dispatch({ type: SET, payload: event.target.value });
+
     this.sharedService.searchTermChange(event.target.value);
-  }
+	}
+
+	resetSearchTerm(){
+		this.store.dispatch({ type: RESET });
+	}
 }
