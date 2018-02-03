@@ -34,6 +34,14 @@
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.1.2.tgz#1046c943ace795027e2e5057df8c897da968fcd6"
 
+"@ngrx/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/core/-/core-1.2.0.tgz#882b46abafa2e0e6d887cb71a1b2c2fa3e6d0dc6"
+
+"@ngrx/store@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-2.2.3.tgz#e7bd1149f1c44208f1cc4744353f0f98a0f1f57b"
+
 "@remy/pstree@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@remy/pstree/-/pstree-1.1.0.tgz#414045d4fec60946604f3718023052aaf49bd8d3"
