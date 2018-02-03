@@ -20,7 +20,7 @@ import { searchReducer } from './reducers/search';
   imports: [
     BrowserModule,
     routing,
-    StoreModule.provideStore({ searchTerm: searchReducer })
+    StoreModule.provideStore({ search: searchReducer })
   ],
   declarations: [
     AppComponent,
