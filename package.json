@@ -7,7 +7,7 @@
     "server": "nodemon ./src/server/index.js",
     "prod": "node ./dist/production_server.js",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail && cp production_server.js dist",
     "lint": "yarn run tslint \"src/client/**/*.ts\"",
     "tslint": "tslint"
   },

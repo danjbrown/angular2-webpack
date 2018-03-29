@@ -86,11 +86,9 @@ The server should be served at http://localhost:8081
 ## Production build for the Angular2 client application
 
 ```
-npm run build
+yarn run build
 
-cp production_server.js dist
-
-npm run prod
+yarn run prod
 ```
 
 The production app should be served at http://localhost:3000
