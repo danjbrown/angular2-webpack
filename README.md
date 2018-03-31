@@ -10,6 +10,7 @@ Key Features:
 * Client side application written in TypeScript.
 * Now includes tslint, a static analysis linter for TypeSript.
 * Provides examples of Karma/Jasmine tests and skeleton test files for client side components.
+* Includes examples of Mocha/Chai tests for server side components.
 * Includes working examples of routing, shared services, event emitters and filters.
 * Working example of ngrx/store used to store the search term entered in the header.
 * The client side application uses webpack-dev-server which builds and reloads the app in the browser when a change is detected, making development faster.
@@ -42,7 +43,7 @@ yarn run lint
 
 Run the tests
 ```
-yarn test
+yarn test:client
 ```
 
 ## Installing the client application with npm
@@ -79,6 +80,11 @@ or
 
 ```
 yarn run server
+```
+
+Run the tests
+```
+yarn test:server
 ```
 
 The server should be served at http://localhost:8081
