@@ -17,7 +17,7 @@ describe('User service', () => {
     });
 
     after(() => {
-        return server.stop();
+        server.stop();
     });
 
     it('it should login a user', (done) => {
