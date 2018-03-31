@@ -24,11 +24,15 @@ class Server {
 
         // CTRL + C server shutdown
         process.on('SIGINT', () => {
-            this.logger.info('Caught interrupt signal');
-            process.exit();
+            this.stop();
         });
 
-        this.logger.info('Node.js server running at http://localhost:' + port);
+        this.logger.info('Server running at http://localhost:' + port);
+    }
+
+    stop() {
+        this.logger.info('Terminating server');
+        process.exit();
     }
 }
 

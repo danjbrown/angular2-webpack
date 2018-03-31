@@ -10,11 +10,15 @@ class User {
     }
 
     registerRoutes() {
-        this.router.get('/user/login', this.authenticateUser.bind(this));
+        this.router.get('/user/login', this.login.bind(this));
+        this.router.get('/user/logout', this.logout.bind(this));
     }
     
-    authenticateUser(req, res) {
-        console.log('Authenticating a user');
+    login(req, res) {
+        res.status(200).json({success: true, message: ''});
+    }
+
+    logout(req, res) {
         res.status(200).json({success: true, message: ''});
     }
 }
