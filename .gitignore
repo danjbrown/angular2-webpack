@@ -7,3 +7,4 @@ bower_components
 aot/*
 dist/*
 .vscode/settings.json
+yarn-error.log
