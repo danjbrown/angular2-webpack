@@ -43,7 +43,7 @@ yarn run lint
 
 Run the tests
 ```
-yarn test:client
+yarn run test:client
 ```
 
 ## Installing the client application with npm
@@ -67,7 +67,7 @@ npm run lint
 
 Run the tests
 ```
-npm test
+npm run test:client
 ```
 
 ## Running the server application
@@ -84,7 +84,7 @@ yarn run server
 
 Run the tests
 ```
-yarn test:server
+yarn run test:server
 ```
 
 The server should be served at http://localhost:8081
