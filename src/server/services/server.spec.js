@@ -1,6 +1,6 @@
-let chai        = require('chai');
-let Server      = require('./server');
-let assert      = require('chai').assert;
+const chai        = require('chai');
+const Server      = require('./server');
+const assert      = require('chai').assert;
 
 describe('Server service', () => {
     it('should create a new instance of the server', () => {

@@ -1,8 +1,8 @@
-let chai        = require('chai');
-let chaiHttp    = require('chai-http');
-let Server      = require('./server');
-let User        = require('./user');
-let should      = chai.should();
+const chai        = require('chai');
+const chaiHttp    = require('chai-http');
+const Server      = require('./server');
+const User        = require('./user');
+const should      = chai.should();
 
 chai.use(chaiHttp);
 
