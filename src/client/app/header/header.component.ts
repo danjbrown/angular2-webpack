@@ -9,7 +9,7 @@ import { SearchState } from '../interfaces/search';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 
