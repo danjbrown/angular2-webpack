@@ -38,7 +38,7 @@ The development app should be served at http://localhost:8080
 
 Run the linter
 ```
-yarn run lint
+yarn run lint:client
 ```
 
 Run the tests
@@ -62,7 +62,7 @@ The development app should be served at http://localhost:8080
 
 Run the linter
 ```
-npm run lint
+npm run lint:client
 ```
 
 Run the tests
@@ -80,6 +80,11 @@ or
 
 ```
 yarn run server
+```
+
+Run the linter
+```
+yarn run lint:server
 ```
 
 Run the tests
