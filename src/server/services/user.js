@@ -27,7 +27,7 @@ class User {
         res.status(200).json({success: true, message: ''});
     }
 
-    authenticate(req, res) {
+    authenticate(req) {
         return new Promise((resolve, reject) => {
             if (req.body.user === 'test' && req.body.password === 'test') {
                 resolve();

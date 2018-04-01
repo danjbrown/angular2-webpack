@@ -9,7 +9,8 @@
     "test:client": "karma start",
     "test:server": "mocha src/server/services/*.spec.js",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail && cp production_server.js dist",
-    "lint": "yarn run tslint \"src/client/**/*.ts\"",
+    "lint:client": "yarn run tslint \"src/client/**/*.ts\"",
+    "lint:server": "jshint src/server",
     "tslint": "tslint"
   },
   "licenses": [
@@ -50,6 +51,7 @@
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.15.0",
     "jasmine-core": "^2.4.1",
+    "jshint": "^2.9.5",
     "jslint": "^0.12.0",
     "karma": "^1.2.0",
     "karma-jasmine": "^1.0.2",

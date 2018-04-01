@@ -1,4 +1,5 @@
-const chai        = require('chai');
+'use strict';
+
 const Server      = require('./server');
 const assert      = require('chai').assert;
 
