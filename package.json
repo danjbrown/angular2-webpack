@@ -10,8 +10,7 @@
     "test:server": "mocha src/server/services/*.spec.js",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail && cp production_server.js dist",
     "lint:client": "yarn run tslint \"src/client/**/*.ts\"",
-    "lint:server": "jshint src/server",
-    "tslint": "tslint"
+    "lint:server": "jshint src/server"
   },
   "licenses": [
     {
