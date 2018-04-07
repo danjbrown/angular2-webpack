@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routes';
 
@@ -12,6 +13,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { FilterPipe } from './pipes/filter.pipe';
 
 import { SharedService } from './services/shared.service';
+import { HttpService } from './services/http.service';
 
 import { StoreModule } from '@ngrx/store';
 import { searchReducer } from './reducers/search';
@@ -19,6 +21,7 @@ import { searchReducer } from './reducers/search';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
     routing,
     StoreModule.provideStore({ search: searchReducer })
   ],
@@ -34,7 +37,8 @@ import { searchReducer } from './reducers/search';
   ],
   providers: [
     appRoutingProviders,
-    SharedService
+    SharedService,
+    HttpService
   ],
   bootstrap: [AppComponent]
 })

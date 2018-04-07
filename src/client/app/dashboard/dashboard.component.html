@@ -3,30 +3,22 @@
 
   <h2 class="sub-header">Section title</h2>
   <div class="table-responsive">
-    <table class="table table-striped">
+    <div class="error" *ngIf="error != ''">
+      {{ error }}
+    </div>
+    <table *ngIf="error == ''" class="table table-striped">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
+          <th>User Name</th>
+          <th>User Id</th>
+          <th>Location</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1,001</td>
-          <td>Lorem</td>
-          <td>ipsum</td>
-          <td>dolor</td>
-          <td>sit</td>
-        </tr>
-        <tr>
-          <td>1,002</td>
-          <td>amet</td>
-          <td>consectetur</td>
-          <td>adipiscing</td>
-          <td>elit</td>
+        <tr *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.id}}</td>
+          <td>{{user.address}}</td>
         </tr>
       </tbody>
     </table>
