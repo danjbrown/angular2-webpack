@@ -6,15 +6,15 @@ export class HttpService {
     constructor(private http: Http) {
     }
 
-    get(url: string) {
-        return this.http.get(url)
+    get(uri: string) {
+        return this.http.get(process.env.API_URL + uri)
         .map(data => {
             return data.json();
         });
     }
 
-    post(url: string, body: any) {
-        return this.http.post(url, body).map(data => {
+    post(uri: string, body: any) {
+        return this.http.post(process.env.API_URL + uri, body).map(data => {
             return data.json();
         });
     }
