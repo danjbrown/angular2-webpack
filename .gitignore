@@ -6,5 +6,5 @@ jspm_packages
 bower_components
 aot/*
 dist/*
-.vscode/settings.json
+.vscode/*
 yarn-error.log
