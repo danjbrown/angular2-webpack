@@ -13,7 +13,6 @@ body {
  */
 
 .sidebar {
-  xwidth: 170px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -98,5 +97,5 @@ body {
 }
 
 .left-margin {
-  margin-left: 250px !important;
+    margin-left: 250px !important;
 }
