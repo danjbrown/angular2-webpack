@@ -1,12 +1,10 @@
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-  <a class="navbar-brand" href="#">Angular2 Starter</a>
-  <form class="navbar-form navbar-right">
-    <input type="text" class="form-control" (keyup)="setSearch($event)" placeholder="Filter dashboards...">
-  </form> 
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Angular2 Starter</a>
+  <input class="form-control form-control-dark w-100" type="text" (keyup)="setSearch($event)" placeholder="Filter dashboards..." aria-label="Filter dashboards...">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a [routerLink]="['/dashboard/1']">Dashboard</a>
-      <a [routerLink]="['/settings']">Settings</a>
+      <a class="nav-link-header" [routerLink]="['/dashboard/1']">Dashboard</a>
+      <a class="nav-link-header" [routerLink]="['/settings']">Settings</a>
     </li>
   </ul>
 </nav>
