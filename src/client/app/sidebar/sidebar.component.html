@@ -1,5 +1,9 @@
-<div class="col-sm-3 col-md-2 sidebar">
-  <ul class="nav nav-sidebar">
-    <li *ngFor="let dashboard of dashboards | filterPipe : searchTerm"><a [routerLink]="['/dashboard/'+dashboard.id]">{{ dashboard.name }}</a></li>
-  </ul>
-</div>
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+  <div class="sidebar-sticky">
+      <ul class="nav flex-column">
+        <li *ngFor="let dashboard of dashboards | filterPipe : searchTerm" class="nav-item">
+          <a class="nav-link" [routerLink]="['/dashboard/'+dashboard.id]">{{ dashboard.name }}</a>
+        </li>
+      </ul>
+  </div>
+</nav>
