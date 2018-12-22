@@ -18,10 +18,10 @@ class User {
     login(req, res) {
         this.authenticate(req, res).then(() => {
             res.status(200).json({success: true, message: ''});
-        })
-        .catch((error) => {
-            res.status(401).json({success: false, message: error});
-        });
+        })  
+            .catch((error) => {
+                res.status(401).json({success: false, message: error});
+            });
     }
 
     logout(req, res) {

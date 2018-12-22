@@ -10,7 +10,7 @@
     "test:server": "mocha src/server/services/*.spec.js",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail && cp production_server.js dist",
     "lint:client": "yarn run tslint \"src/client/**/*.ts\"",
-    "lint:server": "jshint src/server"
+    "lint:server": "./node_modules/.bin/eslint src/server"
   },
   "licenses": [
     {
@@ -31,6 +31,7 @@
     "@ngrx/store": "^2.2.3",
     "bootstrap": "^4.1.2",
     "core-js": "^2.4.1",
+    "eslint": "^5.10.0",
     "express": "^4.14.0",
     "jquery": "^3.3.1",
     "log4js": "^2.5.3",
@@ -52,7 +53,6 @@
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.15.0",
     "jasmine-core": "^2.4.1",
-    "jshint": "^2.9.5",
     "jslint": "^0.12.0",
     "karma": "^1.2.0",
     "karma-jasmine": "^1.0.2",

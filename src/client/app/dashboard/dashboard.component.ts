@@ -23,7 +23,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
 
     // web service request to get the users
-    
     this.httpService.get('/users')
     .subscribe(
       data => {

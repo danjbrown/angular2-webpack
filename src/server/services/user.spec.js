@@ -1,16 +1,17 @@
+/* global describe it before after */
 'use strict';
 
 const chai        = require('chai');
 const chaiHttp    = require('chai-http');
 const Server      = require('./server');
 const User        = require('./user');
-const should      = chai.should();
+const should      = chai.should(); // eslint-disable-line no-unused-vars
 
 chai.use(chaiHttp);
 
 describe('User service', () => {
     let server;
-    let service;
+    let service; // eslint-disable-line no-unused-vars
 
     before(() => {
         server = new Server();
@@ -32,7 +33,7 @@ describe('User service', () => {
                 res.body.should.have.property('success', true);
                 res.body.should.have.property('message', '');
                 done();
-        });
+            });
     });
 
     it('it should logout a user', (done) => {
@@ -43,6 +44,6 @@ describe('User service', () => {
                 res.body.should.have.property('success', true);
                 res.body.should.have.property('message', '');
                 done();
-        });
+            });
     });
 });
